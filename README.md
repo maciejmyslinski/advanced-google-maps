@@ -11,4 +11,10 @@ Config after installation:
 5. Create a new Page with a fieldset that contains the map.
 6. Render your map like this: `{{ my_map_name | advanced_google_maps }}`.
 
+Customizing a theme 🎨
+
+1. Go to [Snazzy Maps](https://snazzymaps.com/)
+2. Pick a color pallete you like
+3. Paste the `JAVASCRIPT STYLE ARRAY` into the `Styles` texarea. The text you paste should start with `[` character and end with `]`.
+
 ⚠️ Note: usage of this addon most likely will generate some cost in Google Cloud Platform. Make sure you know their pricing plans before continuing.
