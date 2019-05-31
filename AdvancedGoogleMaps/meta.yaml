@@ -2,4 +2,4 @@ name: AdvancedGoogleMaps
 version: '0.1'
 developer: 'Maciej Myśliński'
 developer_url: 'https://maciejmyslinski.com'
-commercial: true
+commercial: false
