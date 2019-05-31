@@ -8,6 +8,7 @@ Config after installation:
 2. In Google Cloud Platform Console enable `Maps Javascript API` and `Geocoding API`
 3. Render `{{ advanced_google_maps }}` among other `<script />` tags on your page
 4. Use Advanced Google Maps field in a fieldset. `Field Variable` is now your map's name. This way you can embed multiple maps on the same page – each with different configuration.
-5. Render your map like this: `{{ my_map_name | advanced_google_maps }}`.
+5. Create a new Page with a fieldset that contains the map.
+6. Render your map like this: `{{ my_map_name | advanced_google_maps }}`.
 
 ⚠️ Note: usage of this addon most likely will generate some cost in Google Cloud Platform. Make sure you know their pricing plans before continuing.
