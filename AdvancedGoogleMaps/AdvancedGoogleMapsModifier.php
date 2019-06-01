@@ -7,6 +7,8 @@ use function GuzzleHttp\json_encode;
 
 class AdvancedGoogleMapsModifier extends Modifier
 {
+    private $defaults = ['zoom' => 10, 'height' => '400px', 'width' => '100%', 'address' => '', 'styles' => ''];
+
     /**
      * Modify a value
      *
@@ -17,11 +19,11 @@ class AdvancedGoogleMapsModifier extends Modifier
      */
     public function index($value, $params, $context)
     {
-        $styles = $value['styles'];
-        $zoom = $value['zoom'];
-        $width = $value['width'];
-        $height = $value['height'];
-        $address = $value['address'];
+        $styles = $value['styles'] ?? $this->defaults['styles'];
+        $zoom = $value['zoom'] ?? $this->defaults['zoom'];
+        $width = $value['width'] ?? $this->defaults['width'];
+        $height = $value['height'] ?? $this->defaults['height'];
+        $address = $value['address'] ?? $this->defaults['address'];
         return $this->view('partials.map', compact('styles', 'zoom', 'width', 'height', 'address'));
     }
 }

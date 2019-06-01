@@ -6,6 +6,8 @@ use Statamic\Extend\Fieldtype;
 
 class AdvancedGoogleMapsFieldtype extends Fieldtype
 {
+    private $defaults = ['zoom' => 10, 'height' => '400px', 'width' => '100%', 'address' => '', 'styles' => ''];
+
     /**
      * The blank/default value
      *
@@ -13,7 +15,7 @@ class AdvancedGoogleMapsFieldtype extends Fieldtype
      */
     public function blank()
     {
-        return ['zoom' => 10, 'height' => '400px', 'width' => '100%', 'address' => '', 'styles' => ''];
+        return $this->defaults;
     }
 
     /**
