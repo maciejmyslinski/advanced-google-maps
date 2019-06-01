@@ -25,7 +25,7 @@ Vue.component('advanced_google_maps-fieldtype', {
   template: '' +
   '<div style="display: flex; flex-direction: column;">' +
     '<label>Zoom' +
-      '<input v-model="data.zoom" type="number" min="0" max="20" />' +
+      '<input v-model="data.zoom" v-el:first-input type="number" min="0" max="20" />' +
     '</label>' +
     '<label>Height' +
       '<input v-model="data.height" />' +
@@ -37,7 +37,7 @@ Vue.component('advanced_google_maps-fieldtype', {
       '<input v-model="data.address" />' +
     '</label>' +
     '<label style="width: 100%">Styles' +
-      '<textarea style="width: 100%; height: 400px;" v-model="data.styles" v-el:first-input placeholder="Your styles in JSON"></textarea>' +
+      '<textarea style="width: 100%; height: 400px;" v-model="data.styles" placeholder="Your styles in JSON"></textarea>' +
     '</label>' +
   '</div>'
 });
