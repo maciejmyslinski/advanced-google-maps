@@ -1,12 +1,20 @@
 <?php
 
-namespace Statamic\Addons\AdvancedGoogleMaps;
+namespace Statamic\Addons\AdvancedMaps;
 
 use Statamic\Extend\Fieldtype;
 
-class AdvancedGoogleMapsFieldtype extends Fieldtype
+class AdvancedMapsFieldtype extends Fieldtype
 {
-    private $defaults = ['zoom' => 10, 'height' => '400px', 'width' => '100%', 'address' => '', 'styles' => ''];
+    private $defaults = [
+        'zoom' => 10,
+        'height' => '400px',
+        'width' => '100%',
+        'address' => '',
+        'googleStyles' => '',
+        'mapboxStyles' => '',
+        'mapType' => 'google'
+    ];
 
     /**
      * The blank/default value
